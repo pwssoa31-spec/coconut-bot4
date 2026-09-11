@@ -19,11 +19,11 @@ export default {
 🌴 /ps <link>
  🥥 figurinha a partir de um link do Pinterest
 🌴 /mute
- 🥥 muta quem vc marcar (só admin/bot)
+ 🥥 muta quem vc marcar 
 🌴 /unmute
- 🥥 desmuta quem vc marcar (só admin/bot)
+ 🥥 desmuta quem vc marcar 
 🌴 /ban
- 🥥 remove quem vc marcar do grupo (só admin/bot)
+ 🥥 remove quem vc marcar do grupo 
 🌴 /femboy
  🥥 manda uma imagem perturbadora
 🌴 /secsu
@@ -36,7 +36,7 @@ export default {
  🥥 mostra esse menu
 
 ━━━━━━━━━━━━━━━
- 🌴🥥 COCONUT-BOT v1.0 🥥🌴`
+ 🌴🥥 COCONUT-BOT v4.0 🥥🌴`
 
         try {
             await client.sendMessage(Jid, {
