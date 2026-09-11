@@ -1,0 +1,17 @@
+{
+  "name": "cocokinho-bot",
+  "version": "1.1.0",
+  "description": "Bot de WhatsApp com sistema de sticker automático e temática de coco",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.8",
+    "express": "^5.2.1",
+    "fluent-ffmpeg": "^2.1.3",
+    "node-webpmux": "^3.1.0",
+    "pino": "^9.0.0"
+  }
+}

@@ -1,0 +1,15 @@
+# Dependências (reinstala com npm install)
+node_modules/
+
+# Sessão do WhatsApp — NUNCA suba isso, equivale a dar acesso total à sua conta
+auth_info_baileys/
+
+# Arquivos temporários de mídia/sticker
+temp/
+
+# Dados de runtime (lista de mutados) — gerado automaticamente pelo bot
+data/mutados.json
+
+# Logs e variáveis de ambiente, se um dia usar
+*.log
+.env
