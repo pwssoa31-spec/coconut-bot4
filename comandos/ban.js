@@ -15,7 +15,7 @@ export default {
         if (!Jid.endsWith('@g.us')) {
             return await client.sendMessage(
                 Jid,
-                { text: '❌ Esse comando só funciona dentro de grupo, mano.' },
+                { text: '❌ comaando so fuciona em grupo.' },
                 { quoted: message }
             )
         }
@@ -49,7 +49,7 @@ export default {
             return await client.sendMessage(
                 Jid,
                 {
-                    text: '❌ Só admin do grupo (ou eu mesmo) pode banir alguém, mano.'
+                    text: '❌ so o ditador (Eu) pode banir alguem.'
                 },
                 { quoted: message }
             )
@@ -63,7 +63,7 @@ export default {
             return await client.sendMessage(
                 Jid,
                 {
-                    text: '❌ Pra banir alguém eu preciso ser admin do grupo, mano. Me promove e tenta de novo.'
+                    text: '❌ o ditador ta sem permisao de admin para min.'
                 },
                 { quoted: message }
             )
@@ -75,7 +75,7 @@ export default {
         if (isAdminParticipant(targetParticipant)) {
             return await client.sendMessage(
                 Jid,
-                { text: '❌ Não dá pra banir outro admin, mano.' },
+                { text: '❌ nao da pra banir um ditador.' },
                 { quoted: message }
             )
         }
@@ -84,7 +84,7 @@ export default {
             await client.groupParticipantsUpdate(Jid, [mention], 'remove')
 
             await client.sendMessage(Jid, {
-                text: `🔨 @${mention.split('@')[0]} foi banido do grupo!`,
+                text: `🔨 @${mention.split('@')[0]} ditadura aplicada!`,
                 mentions: [mention]
             })
         } catch (error) {
