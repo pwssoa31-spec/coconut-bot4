@@ -17,7 +17,7 @@ export default {
         if (!Jid.endsWith('@g.us')) {
             return await client.sendMessage(
                 Jid,
-                { text: '❌ Esse comando só funciona dentro de grupo, mano.' },
+                { text: '❌ a ditadura so fuciona em grupo.' },
                 { quoted: message }
             )
         }
@@ -51,7 +51,7 @@ export default {
             return await client.sendMessage(
                 Jid,
                 {
-                    text: '❌ Só admin do grupo (ou eu mesmo) pode mutar alguém, mano.'
+                    text: '❌ Só o ditador pode mutar alguem verme!'
                 },
                 { quoted: message }
             )
@@ -65,7 +65,7 @@ export default {
             return await client.sendMessage(
                 Jid,
                 {
-                    text: '❌ Pra mutar alguém eu preciso ser admin do grupo, mano. Me promove e tenta de novo.'
+                    text: '❌ pra começar a ditadura preciso ser admin do grupo.'
                 },
                 { quoted: message }
             )
@@ -77,7 +77,7 @@ export default {
         await client.sendMessage(
             Jid,
             {
-                text: `🔇 @${mention.split('@')[0]} foi mutado! A partir de agora eu apago na hora qualquer mensagem que ele(a) mandar aqui, até um admin dar /unmute.`,
+                text: `🔇 @${mention.split('@')[0]} foi mutado em nome da ditadura nao pode mais mandar mensagem, de /unmute para desmutar.`,
                 mentions: [mention]
             },
             { quoted: message }
